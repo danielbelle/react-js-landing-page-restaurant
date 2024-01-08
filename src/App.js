@@ -2,7 +2,7 @@ import './App.css';
 import Home from './Components/Home.js';
 import About from './Components/About.js';
 import Work from './Components/Work.js';
-import Testmonials from './Components/Testmonials.js';
+import Testimonials from './Components/Testimonials.js';
 import Contact from './Components/Contact.js';
 import Footer from './Components/Footer.js';
 
@@ -12,7 +12,7 @@ function App() {
       <Home />
       <About />
       <Work />
-      <Testmonials />
+      <Testimonials />
       <Contact />
       <Footer />
     </div>

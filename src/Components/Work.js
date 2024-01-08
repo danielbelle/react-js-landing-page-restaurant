@@ -8,17 +8,17 @@ const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Pick Meals",
+      title: "Escolher Refeições",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in posuere nisl. Nullam et lacus erat.",
     },
     {
       image: ChooseMeals,
-      title: "Choose How Often",
+      title: "Defina a Frequência",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.",
     },
     {
       image: DeliveryMeals,
-      title: "Fast Deliveries",
+      title: "Entrega Rápida",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur.",
     }
   ]
@@ -26,8 +26,8 @@ const Work = () => {
   return (
     <div id="work" className='work-section-wrapper'>
       <div className='work-section-top'>
-        <p className='primary-subheading'>Work</p>
-        <h1 className='primary-heading'>How It Work</h1>
+        <p className='primary-subheading'>Formas de Trabalho</p>
+        <h1 className='primary-heading'>Como Funciona</h1>
         <p className='primary-text'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in posuere nisl. Nullam et lacus erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in posuere nisl. Nullam et lacus erat.
         </p>

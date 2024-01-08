@@ -3,12 +3,12 @@ import ProfilePic from '../Assets/john-doe-image.png'
 import { AiFillStar } from 'react-icons/ai'
 
 
-function Testmonials() {
+function Testimonials() {
   return (
-    <div id="testmonials" className='testimonial-section-wrapper'>
+    <div id="testimonials" className='testimonial-section-wrapper'>
       <div className='work-section-top'>
-        <p className='primary-subheading'>Testimonials</p>
-        <h1 className='primary-heading'>What They Are Saying</h1>
+        <p className='primary-subheading'>Clientes</p>
+        <h1 className='primary-heading'>O Que Estão Falando</h1>
         <p className='primary-text'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in posuere nisl. Nullam et lacus erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in posuere nisl. Nullam et lacus erat.
         </p>
@@ -25,10 +25,10 @@ function Testmonials() {
           <AiFillStar />
           <AiFillStar />
         </div>
-        <h2>Jhon Doe</h2>
+        <h2>Joãozinho</h2>
       </div>
     </div>
   )
 }
 
-export default Testmonials
+export default Testimonials

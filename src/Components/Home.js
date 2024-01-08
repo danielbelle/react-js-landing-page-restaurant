@@ -15,13 +15,13 @@ const Home = () => {
         </div>
         <div className='home-text-section'>
           <h1 className='primary-heading'>
-            Your Favourite Food Delivered hot & Fresh
+            Sua Comida Favorita Entregue Quente e Fresca
           </h1>
           <p className='primary-text'>
-            Healthy switcher chefs to all the prep work, like peeding, chooping & marinating, so you can cook a fresh food.
+            Chefes tomam todo um cuidado na preparação para que você possa cozinhar alimentos frescos.
           </p>
           <button className='secondary-button'>
-            Order Now <FiArrowRight />
+            Comprar Agora <FiArrowRight />
           </button>
         </div>
         <div className='home-image-container'>

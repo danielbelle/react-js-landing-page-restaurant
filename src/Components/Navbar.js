@@ -6,8 +6,10 @@ import { Box, Drawer, ListItem, ListItemButton, ListItemIcon, ListItemText, List
 import HomeIcon from "@mui/icons-material/Home"
 import InfoIcon from "@mui/icons-material/Info"
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded"
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded"
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded"
+import { Link } from 'react-scroll'
 
 
 const Navbar = () => {
@@ -15,23 +17,27 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: "Home",
+      text: "Início",
       icon: <HomeIcon />
     },
     {
-      text: "About",
+      text: "Sobre",
       icon: <InfoIcon />
     },
     {
-      text: "Testimonials",
+      text: "Como Funciona",
+      icon: <AppRegistrationIcon />
+    },
+    {
+      text: "Depoimentos",
       icon: <CommentRoundedIcon />
     },
     {
-      text: "Contact",
+      text: "Contato",
       icon: <PhoneRoundedIcon />
     },
     {
-      text: "Cart",
+      text: "Carrinho de Compras",
       icon: <ShoppingCartRoundedIcon />
     }
   ]
@@ -41,14 +47,15 @@ const Navbar = () => {
       <img src={Logo} alt=''></img>
     </div>
     <div className='navbar-links-container'>
-      <a href=''>Home</a>
-      <a href=''>About</a>
-      <a href=''>Testimonials</a>
-      <a href=''>Contact</a>
-      <a href=''>
+      <Link to='home' spy={true} smooth={true} offset={0} duration={500}>Início</Link>
+      <Link to='about' spy={true} smooth={true} offset={0} duration={500}>Sobre</Link>
+      <Link to='work' spy={true} smooth={true} offset={0} duration={500}>Como Funciona</Link>
+      <Link to='testimonials' spy={true} smooth={true} offset={0} duration={500}>Depoimentos</Link>
+      <Link to='contact' spy={true} smooth={true} offset={0} duration={500}>Contato</Link>
+      <Link to=''>
         <BsCart2 className='navbar-cart-icon' />
-      </a>
-      <button className='primary-button'>Bookings Now</button>
+      </Link>
+      <button className='primary-button'>Reservar Agora</button>
     </div>
     <div className='navbar-menu-container'>
       <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

@@ -18,26 +18,32 @@ const Navbar = () => {
   const menuOptions = [
     {
       text: "Início",
+      to: "home",
       icon: <HomeIcon />
     },
     {
       text: "Sobre",
+      to: "about",
       icon: <InfoIcon />
     },
     {
       text: "Como Funciona",
+      to: "work",
       icon: <AppRegistrationIcon />
     },
     {
       text: "Depoimentos",
+      to: "testimonials",
       icon: <CommentRoundedIcon />
     },
     {
       text: "Contato",
+      to: "contact",
       icon: <PhoneRoundedIcon />
     },
     {
       text: "Carrinho de Compras",
+      to: "contact",
       icon: <ShoppingCartRoundedIcon />
     }
   ]
@@ -71,12 +77,14 @@ const Navbar = () => {
       >
         <List>
           {menuOptions.map((item) => (
-            <ListItem key={item.text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>{item.icon}</ListItemIcon>
-                <ListItemText primary={item.text} />
-              </ListItemButton>
-            </ListItem>
+            <Link to={(item.to)} spy={true} smooth={true} offset={0} duration={500}>
+              <ListItem key={item.text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </ListItem>
+            </Link>
           ))}
         </List>
       </Box>

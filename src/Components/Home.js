@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <div className='home-text-section'>
           <h1 className='primary-heading'>
-            Sua Comida Favorita Entregue Quente e Fresca
+            Sua Comida Entregue Quente e Fresca
           </h1>
           <p className='primary-text'>
             Chefes tomam todo um cuidado na preparação para que você possa cozinhar alimentos frescos.

@@ -2,6 +2,7 @@ import React from 'react'
 import AboutBackground from '../Assets/about-background.png'
 import AboutBackgroundImage from '../Assets/about-background-image.png'
 import { BsFillPCircleFill } from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 const About = () => {
   const newTab = url => {
@@ -28,7 +29,9 @@ const About = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in posuere nisl. Nullam et lacus erat
         </p>
         <div className='about-buttons-container'>
-          <button className='secondary-button'>Mais Sobre</button>
+          <Link to='contact' spy={true} smooth={true} offset={0} duration={500}>
+            <button className='secondary-button'>Mais Sobre</button>
+          </Link>
           <button className='watch-video-button' onClick={() => newTab('https://www.youtube.com/watch?v=ULoPE2xOBCo')}>Play no Vídeo
             {" "}
             <BsFillPCircleFill />

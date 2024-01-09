@@ -55,7 +55,9 @@ const Navbar = () => {
       <Link to=''>
         <BsCart2 className='navbar-cart-icon' />
       </Link>
-      <button className='primary-button'>Reservar Agora</button>
+      <Link to='contact' spy={true} smooth={true} offset={0} duration={500}>
+        <button className='primary-button'>Reservar Agora</button>
+      </Link>
     </div>
     <div className='navbar-menu-container'>
       <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

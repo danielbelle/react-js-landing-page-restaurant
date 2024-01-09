@@ -361,14 +361,21 @@ nav {
   font-weight: 600;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .navbar-links-container a {
     margin-right: 1rem;
     font-size: 1rem;
   }
+}
+
+@media (max-width: 1000px) {
+  .navbar-links-container a {
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+  }
 
   .primary-button {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .home-bannerImage-container {
